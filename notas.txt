@@ -1,0 +1,8 @@
+
+
+
+importancia de abrir y cerrar correctamente las tags
+
+significado de los codigos de http como los de error 
+400
+200
