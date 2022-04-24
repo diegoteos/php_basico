@@ -4,5 +4,42 @@
 importancia de abrir y cerrar correctamente las tags
 
 significado de los codigos de http como los de error 
-400
-200
+401 no tiene permisos para visualizar el recurso
+200 exitosa
+404 la pagina no se encuentra
+500 error interno del servidor
+
+
+El usuario se comunica con el servidor mediante mensajes 
+entre los mas comunes esta el GET y POST
+
+GER: usa una URL con parametros conocidos como Query String 
+
+los metodos HTTP como PUT, DELETE y OPTION se utilizan para la construccion
+de API's REST 
+
+
+PSR: GUIAS BASICAS RECOMENDADAS PARA PROGRAMAR
+PHP STANDARDS RECOMENDATIONS
+PSR-1: BASIC CODEING STANDARDS
+PSR-2: CODING STYLE GUIDE
+PSR-3: LOGGER INTERFACE
+PSR-4: AUTOLOADING STANDARDS
+PSR-6: COCHING INTERFACE
+PSR-7: HTTP MESAGE INTERFACE
+
+
+
+APLICACION WEB:
+Es una pieza de codigo que corre del lado del cliente habitualmente
+en un navegador y se comunica con un servidor el cual recibe peticiones
+del cliente y procesa y genera una respuesta
+Interactua entre cliente y servidor, puede ser una parte de un sitio web
+
+Sitio Web:
+Unicamente muestra informacion al cliente
+
+
+
+
+
