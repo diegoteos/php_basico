@@ -3,6 +3,8 @@
 
 importancia de abrir y cerrar correctamente las tags
 
+
+
 significado de los codigos de http como los de error 
 401 no tiene permisos para visualizar el recurso
 200 exitosa
@@ -40,6 +42,17 @@ Sitio Web:
 Unicamente muestra informacion al cliente
 
 
+SERVIDOR WEB:
+Pieza de software que corre en una maquina y escucha las peticiones provenientes de un puerto especifico,
+usualmente es el 80 aunque puede ser tambien cualquier otro que se encuentre disponible
 
 
+USO DE:
+include  incluye el archivo definido y si no lo encuentra unicamente lanza una alerta
+require  es obligatorio que encuentre el archivo
 
+Variante de include: include_once  solo carga una vez el archivo a diferencia del include
+Variante de require: require_once  solo carga una vez el archivo a diferencia del require
+
+COMENTARIOS
+dos tipos de comentarios, una linea con dos slash y el multilinea con slash y asterisco
