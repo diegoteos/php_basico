@@ -61,3 +61,6 @@ dos tipos de comentarios, una linea con dos slash y el multilinea con slash y as
 variables:
 $esta_es_una_variabble = 'esta_es_una_variabble';
 ?>
+
+
+ 
