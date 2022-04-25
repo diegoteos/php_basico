@@ -56,3 +56,8 @@ Variante de require: require_once  solo carga una vez el archivo a diferencia de
 
 COMENTARIOS
 dos tipos de comentarios, una linea con dos slash y el multilinea con slash y asterisco
+
+
+variables:
+$esta_es_una_variabble = 'esta_es_una_variabble';
+?>
