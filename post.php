@@ -1,29 +1,60 @@
+
+
+
 <?php
 
-    $ch = curl_init();
+if ($_POST != null){
 
-    $array = [
-        'name' => 'Diego',
-        'job' => 'Trabajador',
-    ];
+    $tipo = $_POST["tplaca"];
+    $placa = $_POST["nplaca"];
 
-    $data = http_build_query($array);
+   $curl = curl_init();
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'http://consulta.muniguate.com/emetra/despliega.php',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS => array('tplaca' => "$tipo",'nplaca' => "$placa"),
+  CURLOPT_HTTPHEADER => array(
+    'Cookie: PHPSESSID=72lqmi7o5d2qj2r1spt15kdeh7'
+  ),
+));
 
-    curl_setopt($ch, CURLOPT_URL, 'https://reqres.in/api/users');
-    curl_setopt($ch, CURLOPT_POST, true);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($curl);
+curl_close($curl);     
 
-    $response = curl_exec($ch);
+echo $response;
 
-    if (curl_errno($ch)) echo curl_error($ch);
-    else $decoded = json_decode($response, true);
 
-    foreach ($decoded as $index => $value){
-        echo "$index: $value <br/>";
-    }
 
-    curl_close($ch);
+}
+
 
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multas PMT</title>
+</head>
+<body>
+    <h1>Este es sus sistema de verificacion de Multas</h1>
+    <form action="post.php" method="post">
+        
+        <input type="text" name="tplaca" id="">
+        <input type="text" name="nplaca" id="">
+        <input type="submit" value="Enviar">
+
+    </form><br><br>
+</body>
+</html>
+
+
