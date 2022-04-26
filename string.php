@@ -1,3 +1,7 @@
+
+
+<a href="http://php.net/manual/es/ref.strings.php<">Este es el enlace para ver mas usos de string</a> 
+
 <?php
     $cadena = 'Hola mundo desde PHP.';
    /* echo 'La longitud de la cadena es de: '.strlen($cadena).'<br/>';
