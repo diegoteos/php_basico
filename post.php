@@ -41,6 +41,7 @@ if ($response != null){
  echo substr($esto,0,74)."<br>";  // imprimo las posiciones que me interesan segun el nuevo string
 }
 
+
 }
 
 

@@ -1,6 +1,6 @@
 
 
-<a href="http://php.net/manual/es/ref.strings.php<">Este es el enlace para ver mas usos de string</a> 
+<a href="http://php.net/manual/es/ref.strings.php">Este es el enlace para ver mas usos de string</a> 
 
 <?php
     $cadena = 'Hola mundo desde PHP.';
@@ -20,6 +20,6 @@
 
  
 */
-    echo substr($cadena,1,6);   // IMPRIMO EL STRING COMPRENDIDO DE LA POSICION 1 A LA 6
+    echo "y quiero imprimir una parte de esta cadena ".substr($cadena,1,6);   // IMPRIMO EL STRING COMPRENDIDO DE LA POSICION 1 A LA 6
 
 ?>

@@ -133,4 +133,10 @@ OPERADORES DE INCREMENTO Y DECREMENTO
 --
 
 
+
+USO DE:
+
+isset
+empty
+null
  
