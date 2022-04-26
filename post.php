@@ -27,11 +27,23 @@ curl_setopt_array($curl, array(
 $response = curl_exec($curl);
 curl_close($curl);     
 
-echo $response;
+//echo $response;
+if ($response != null){
 
+  echo strpos($response, 'BUSCANOS MUNIGUATE')."<br>";  // veo en que posicion esta este string
 
+  //echo substr($response,5056,5058);  // imprimo esta parte del string del array 
+
+  $esto = substr($response,5689,5690)."<br>";  // meto el string que trae datos que no me sirven en una nueva variable
+ //echo "$esto";
+ echo strpos($esto, 'servicio')."<br>";  // en la nueva variable veo en que posicion esta este string que me interesa
+ echo substr($esto,0,69)."<br>";  // imprimo las posiciones que me interesan segun el nuevo string
+}
 
 }
+
+
+
 
 
 
