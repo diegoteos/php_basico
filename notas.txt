@@ -63,4 +63,74 @@ $esta_es_una_variabble = 'esta_es_una_variabble';
 ?>
 
 
+SON VARIABLES DISTINTAS LAS SIGUIENTES:
+ $nombre;
+ $NOMBRE;
+
+
+ EXISTEN 8 TIPOS DE DATOS LOS CUATRO MAS IMPORTANTES SON:
+ Booleanos con valores True o False
+ Enteros numeros sin decimales
+ Numeros de punto flotante  los cuales tienen decimales
+ String cadenas de caracteres que estan encerradas en comillas simploes o dobles
+
+
+
+
+ TIPADO DINAMICO, las variables pueden ser reasignado su valores
+
+ $numero = 4;
+ echo $numero;
+ $numero = 10;
+ echo $numero;
+
+
+ LAS CONSTANTES SE DEFINEN CON MAYUSCULAS
+
+ define('NOMBRE_CURSO', 'este es un curso nuevo y basico);
+
+ echo 'Este es un curso: '.NOMBRE_CURSO;
+
+
+
+ OPERADORES ARITMETICOS
++ SUMA  
+- RESTA
+* MULTIPLICACION
+/ DIVISION
+% MODULO 
+** EXPONENCIACION
+
+
+OPERADORES DE ASIGNACION
+= asigna valor a una variables
+a+=b es igual: a=a+b
+a-=b es igual: a=a-b
+a*=b
+a/=b 
+
+
+OPERADORES DE COMPARACION:
+>       mayor que
+<       menor que
+>=      mayor o igual
+<=      menor o igual
+==      igual
+<>      diferente
+!=      diferente
+===     identico
+!==     no es identico
+
+<=>     operador de nave espacial
+
+OPERADORES LOGICOS
+&&
+||
+!
+
+OPERADORES DE INCREMENTO Y DECREMENTO
+++
+--
+
+
  
