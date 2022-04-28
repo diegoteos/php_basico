@@ -1,5 +1,6 @@
 <?php
 
+    declare(strict_types=1);
 
     echo 'A las funciones se les puede asignar variables con valores por defecto, para que al o recibir algun parametro no lancen el mensaje de error.<br><br/>'; 
 
@@ -12,8 +13,25 @@
     
 
     echo '<br><br/>';
-        
+
     $resultado = sumar(84, 25);
     echo $resultado;
+
+
+    echo '<br><br/>';
+
+    
+
+    echo 'Con declare(strict_types=1) logramos hacer que se respeten los tipos de parametros que se ingresan, pero tiene que estar al inicio del codigo <br/>';
+    function sumas(int $n1, int $n2): int 
+    {
+        return $n1 + $n2;
+    }
+
+
+
+    echo '<br><br/>';
+
+    echo sumas(4, 3);
 
 ?>
