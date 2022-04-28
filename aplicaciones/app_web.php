@@ -31,7 +31,7 @@
             <li><?php echo $i; ?></li>
         <?php endfor ?>
 
-        <?php $numero = 10; if ($numero >= 5): ?>
+        <?php $numero = 0; if ($numero >= 5): ?>
 
             El numero si es mayor a 1
 
