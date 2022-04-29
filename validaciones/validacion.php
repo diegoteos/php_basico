@@ -21,9 +21,9 @@
             </div>
         </div>
 
-        <form action="" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre?usuario" id="nombre" value="">
+        <form action="validar.php" method="POST">
+            <label for="nombre:">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" value="">
             <br>
             <label for="edad">Edad:</label>
             <input type="number" name="edad" id="edad">
