@@ -7,7 +7,7 @@ if ($_POST != null) {
 
   $curl = curl_init();
   curl_setopt_array($curl, array(
-    CURLOPT_URL => 'https://micuenta.tigo.com.gt/residencial/conocetucodigo',
+    CURLOPT_URL => '...',
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => '',
     CURLOPT_MAXREDIRS => 10,
