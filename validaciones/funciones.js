@@ -1,6 +1,6 @@
 //Se utiliza para que el campo de texto solo acepte numeros
 function SoloNumeros(evt) {
-    if (windows.evt) { //asignamos el valor de la tecla a keynum
+    if (document.evt) { //asignamos el valor de la tecla a keynum
         keynum = evt.keyCode;  // IE
     }
     else {
@@ -11,6 +11,7 @@ function SoloNumeros(evt) {
         return true;
     }
     else {
+        alert("Ingrese su edad con numeros.");
         return false;
     }
 }
@@ -21,7 +22,7 @@ function soloLetras(e) {
     tecla = String.fromCharCode(key).toString();
     letras = " áéíóúabcdefghijklmnñopqrstuvwxyzÁÉÍÓÚABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
     especiales = [8, 37, 39, 46, 6]; //Es la validacion del keycodes, que teclas recibe en el campo de texto
-    techa_especial = false;
+    tecla_especial = false;
     for(var i in especiales){
         if(key == especiales[i]){
             tecla_especial = true;
@@ -34,3 +35,4 @@ function soloLetras(e) {
     }
 
 }
+

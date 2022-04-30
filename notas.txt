@@ -140,3 +140,10 @@ isset
 empty
 null
  
+
+
+FILTROS EN PHP:
+Para validar las entradas del usuario de una manera facil, PHP provee la funcion
+filter_var() que puede ser usada tanto para limpiar como para validad los valores de entrada. 
+Esta funcion recibe dos argumentos, el primero es la variable en la cual viene el valor 
+y el segundo es la constante del filtro o validacion que se va a aplicar
