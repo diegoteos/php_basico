@@ -1,3 +1,12 @@
+para ver todos los errores en fase de desarrollo en PHP
+- error reporting
+
+== compara solo el valor
+=== compara el valor y tambien el tipo
+utilizar siempre que se pueda comillas simples
+
+
+
 
 
 
